@@ -78,7 +78,25 @@ h6 					{ font-weight:bold; /* This helps to identify headings at the initial bu
 					{ /* Place your styles here for all 'Retina' screens */ }
 
 }
+body {
+     background-color: #000000;
+     background-position: center top;
+     background-repeat: no-repeat;
+     color: white;
+     font-family: Myriad Pro,Arial,sans-serif;
+     font-size: 12px;
+     margin: auto;
+     padding: 0px;
+}
+.text_color_60_myriadpro_b {
+     color: rgba(255, 255, 255, 0.6);
+     font-weight: bold;
+}
 
+.text_color_myriadpro_b {
+     color: #FFFFFF;
+     font-weight: bold;
+}
 /* ---------------------------------------------------------------------------------------------------------- 
 header styling -------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
@@ -111,7 +129,7 @@ header styling -----------------------------------------------------------------
      font-family: Myriad Pro,Arial,sans-serif;
      font-size: 14px;
      left: 50%;
-     margin-left: -495px;
+     margin-left: -490px;
      position: absolute;
      width: 990px;
      z-index: 13000;
@@ -185,6 +203,304 @@ header styling -----------------------------------------------------------------
 }
 /* ---------------------------------------------------------------------------------------------------------- 
 END header styling -------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------- 
+content styling -------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+#middle {
+     background-color: #000000;
+     background-image: url("images/middle/middle_bg.png");
+     background-position: center bottom;
+     background-repeat:repeat-y;
+     min-height:1000px;
+	 display:block;
+     margin: -417px auto 0px;
+     position: relative;
+     width: 982px;
+	 padding-bottom:50px;
+}
+
+#middle #register_button {
+     background-image: url("images/header/register_btn.png");
+     background-position: center bottom;
+     background-repeat: no-repeat;
+     height: 134px;
+     margin: 0px;
+     padding: 0px;
+     position: absolute;
+     right: -26px;
+     text-indent: -999999px;
+     top: -105px;
+     width: 417px;
+     z-index: 12000;
+}
+/* ---------------------------------------------------------------------------------------------------------- 
+menu styling ------------------------------------------------------------------------------------------------*/
+#middle #middle_menu {
+     clear: both;
+     position: absolute;
+     top: -4px;
+}
+
+#middle #middle_menu ul li {
+     float: left;
+     height: 91px;
+     margin: 0px -1px 0px 0px;
+     padding: 0px;
+     text-indent: -99999px;
+     width: 143px;
+}
+
+#middle #middle_menu ul li[value="button1"] {
+     background: url("images/middle/left/menu/button1.png") no-repeat scroll 0px 50% transparent;
+}
+
+#middle #middle_menu ul li[value="button2"] {
+     background: url("images/middle/left/menu/button2.png") no-repeat scroll 0px 50% transparent;
+}
+
+#middle #middle_menu ul li[value="button3"] {
+     background: url("images/middle/left/menu/button3.png") no-repeat scroll 0px 50% transparent;
+}
+
+#middle #middle_menu ul li[value="button4"] {
+     background: url("images/middle/left/menu/button4.png") no-repeat scroll 0px 50% transparent;
+}
+
+#middle #middle_menu ul li[value="button5"] {
+     background: url("images/middle/left/menu/button5.png") no-repeat scroll 0px 50% transparent;
+}
+
+#middle #middle_left {
+     left: 0px;
+     position: relative;
+     width: 710px;
+}
+/*END menu styling -------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+banner styling ------------------------------------------------------------------------------------------------*/
+#middle .middle_left_banner {
+     height: 232px;
+     position: absolute;
+     top: 91px;
+     width: 710px;
+     z-index: 12000;
+}
+
+#middle .middle_left_banner img[value="banner_img"] {
+     background: url("images/middle/left/banner/banner.png") no-repeat scroll 50% 50% transparent;
+}
+#middle .middle_left_banner #banner_points {
+	background: url("images/middle/left/banner/banner_points.png") no-repeat scroll 50% 50% transparent;
+	 position: absolute;
+	 z-index: 13000;
+     top: 216px;
+	 left:50%;
+	 margin-left:-72px;
+	 width:144px;
+	 height:28px;
+	 
+}
+/*END banner styling -------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------- 
+content left side styling -----------------------------------------------------------------------------------*/
+#middle #middle_left{
+	position: relative;
+    padding-top:350px;
+    width: 711px;
+}
+#middle #middle_left #content {
+     background-color: #BCB59B;
+     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
+     display: block;
+     height: auto;
+     margin: 0px auto;
+     padding:0px;
+	 margin-top: -20px;
+     width: 711px;
+}
+#middle #middle_left #content .space20px {
+     height: 20px;
+     margin: 0px;
+     padding: 0px;
+     width: 710px;
+}
+#middle #middle_left #content #content_border {
+     background: url("images/middle/left/content/content_border.png") no-repeat scroll 0px 50% transparent;
+     height: 467px;
+     position: absolute;
+     width: 712px;
+     z-index: 10000;
+}
+
+#middle #middle_left #content #content_bg {
+     background-color: #D8CDB1;
+     border: 1px solid #887651;
+     margin: 0px auto;
+     width: 666px;
+}
+
+#middle #middle_left #content #content_bg #content_sec_bg {
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     height: auto;
+     margin: 3px auto;
+     width: 657px;
+}
+
+#middle #middle_left #content #content_bg #content_sec_bg h1[value="content_title"] {
+     color: #000000;
+     font-size: 20px;
+     line-height: 30px;
+     text-align: center;
+	 font-family: Rockwell,Arial,sans-serif;
+	 font-weight: bold;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- 
+content news styling ----------------------------------------------------------------------------------------*/
+#middle #middle_left #content #content_bg #content_sec_bg .content_news {
+     border-top: 1px solid rgba(0, 0, 0, 0.2);
+     color: #000000;
+     font-size: 12px;
+     font-weight: bold;
+     margin: 0px 5px 35px 10px;
+     padding: 15px 0px 0px 0px;
+}
+
+#middle #middle_left #content #content_bg #content_sec_bg .content_news h2[value="news_title"] {
+     color: rgb(181,51,11);
+     font-size: 17px;
+     line-height: 22px;
+}
+
+#middle #middle_left #content #content_bg #content_sec_bg .content_news p[title="news_commented_by"] {
+     color: rgb(118,118,118);
+     float: left;
+	 font-size:13px;
+     line-height: 26px;
+     margin-right: 30px;
+}
+
+#middle #middle_left #content #content_bg #content_sec_bg .content_news p[title="news_comments_count"] {
+     color: rgb(118,118,118);
+	 font-size:13px;
+     line-height: 26px;
+}
+
+#middle #middle_left #content #content_bg #content_sec_bg .content_news img[value="news_image"] {
+     float: left;
+     margin-right: 15px;
+}
+
+#middle #middle_left #content #content_bg #content_sec_bg .content_news p[title="news_text"] {
+     line-height: 24px;
+	 font-size:13px;
+	 font-family: "Myriad Pro" ,Arial,sans-serif;
+}
+#middle #middle_left #content #content_bg #content_sec_bg .content_news a[rel="more"]{
+	text-decoration:underline;
+	color: #000000;
+	font-size:13px;
+	line-height:15px;	
+	padding:0px 20px 1px 158px;
+	background:url("images/middle/left/content/news/news_x.png") no-repeat right 50%;
+}
+/*END content news styling -----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+
+/*END content left side styling -------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+content right side styling ----------------------------------------------------------------------------------*/
+#middle #middle_right {
+     margin-left: 2px;
+     position: absolute;
+     right: 0px;
+     width: 270px;
+	 top: 0px;
+}
+
+#middle #middle_right .middle_right_image {
+     height: 165px;
+     margin: 0px auto;
+     width: 270px;
+}
+#middle #middle_right .middle_right_image img[value="requirements"] {
+     background: none;
+	 width:264px;
+	 height:156px;
+	 margin:10px 3px 5px 3px;
+	 
+}
+#middle #middle_right .middle_right_image .game_alerts{
+	background: url("images/middle/right/game_alerts_bg.png") no-repeat 50% 50%;
+	width:259px;
+	height:134px;
+	margin:5px 5px;
+}
+#middle #middle_right .middle_right_image .game_alerts h1{
+    padding:15px 10px 5px 10px;
+    font-size: 14px;
+    color:rgb(255,192,80);
+}
+#middle #middle_right .middle_right_image .game_alerts p{
+    padding:5px 10px;
+    font-size: 12px;
+    color:rgb(255,255,255);
+}
+#middle #middle_right .middle_right_image .game_alerts a{
+    padding:5px 10px;
+    font-size: 12px;
+    color:rgb(255,192,80);
+    text-decoration:none;
+}
+#middle #middle_right .middle_right_image .server_stats{
+	background: url("images/middle/right/server_stats.png") no-repeat 50% 50%;
+	width:257px;
+	 height:142px;
+	 margin:5px 6px;
+}
+#middle #middle_right .middle_right_image img[value="demo_image"] {
+     background: url("images/middle/right/middle_right_image.png") no-repeat scroll 50% 50% transparent;
+	 margin: 5px 11px;
+	 width:247px;
+}
+/*END content right side styling ------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------- 
+content top and bottom line styling -------------------------------------------------------------------------*/
+#middle #middle_top_line, #middle_bottom_line {
+     background-repeat: no-repeat;
+     margin: 0px auto;
+     position: absolute;
+}
+
+#middle #middle_top_line {
+     background-image: url("images/middle/middle_top_line.png");
+     height: 62px;
+     margin-left: -26px;
+     margin-top: -19px;
+     position: absolute;
+     top: 0px;
+     width: 1034px;
+}
+
+#middle #middle_bottom_line {
+     background-image: url("images/middle/middle_bottom_line.png");
+     bottom: 0px;
+     height: 17px;
+     margin-top: 0px;
+     width: 982px;
+}
+/*END content top and bottom line styling----------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+END content styling -------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
 
 /* ---------------------------------------------------------------------------------------------------------- 
