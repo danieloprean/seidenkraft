@@ -14,3 +14,29 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+
+<!--header-->
+<div id="header">
+	<div id="header_bar">
+	</div>
+    <div id="header_content">
+    	<img alt="logo_seidenkraft_online" src="wp-content/themes/seidenkraft/images/header/logo.png" />
+        <img alt="facebook_seidenkraft_online" src="wp-content/themes/seidenkraft/images/header/f_logo.png" />
+        <form>
+        	<div class="input_field">
+        		<input alt="input" type="text" value="Username..." name="username" onfocus="if(this.value == 'Username...') { this.value=''; try{this.focus();}catch(e){}}"/>
+            </div>
+            <div id="passwordbox" class="input_field">
+            	<input alt="input" type="text"  value="Password..." name="password"  onfocus="replaceT(this)" />
+            </div>
+            <div class="submit_field">
+            	<input alt="submit" type="submit" value="Login Now" name="submit" />
+            </div>
+        </form>
+        <div id="header_text">
+        	<p title="new_here">New here?</p>
+            <p title="create_account">Create an account!</p>
+        </div>
+    </div>
+</div>
+<!--header END-->

@@ -78,3 +78,264 @@ h6 					{ font-weight:bold; /* This helps to identify headings at the initial bu
 					{ /* Place your styles here for all 'Retina' screens */ }
 
 }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+header styling -------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+#header {
+     background-color: #000000;
+     background-image: url("images/header/header_bg.png");
+     background-position: center bottom;
+     background-repeat: no-repeat;
+     color: white;
+     height: 697px;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+}
+
+#header_bar {
+     background-image: url("images/header/header_bar.png");
+     background-position: center top;
+     background-repeat: repeat-x;
+     height: 56px;
+     margin: auto;
+     padding: 0px;
+     position: absolute;
+     top: 0px;
+     width: 100%;
+     z-index: 12000;
+}
+
+#header #header_content {
+     font-family: Myriad Pro,Arial,sans-serif;
+     font-size: 14px;
+     left: 50%;
+     margin-left: -495px;
+     position: absolute;
+     width: 990px;
+     z-index: 13000;
+}
+
+#header #header_content img {
+     float: left;
+}
+
+#header #header_content img[alt="logo_seidenkraft_online"] {
+     margin-left: -10px;
+     margin-right: 116px;
+}
+
+#header #header_content img[alt="facebook_seidenkraft_online"] {
+     height: 22px;
+     margin-top: 14px;
+     width: 22px;
+}
+
+#header #header_content form input[alt="input"] {
+     background-color: transparent;
+     border: medium none;
+     color: rgba(255, 255, 255, 0.6);
+     font-size: 16px;
+     font-style: italic;
+     font-weight: normal;
+     height: 24px;
+     line-height: 24px;
+     width: 119px;
+}
+
+#header #header_content .input_field {
+     background-image: url("images/header/text_box.png");
+     background-position: 0px 50%;
+     background-repeat: no-repeat;
+     float: left;
+     height: 24px;
+     margin: 13px 0px auto 10px;
+     width: 119px;
+}
+
+#header #header_content form input[alt="submit"] {
+     background-color: transparent;
+     border: none;
+     height: 32px;
+     width: 85px;
+	 line-height: 32px;
+	 font-size:13px;
+	 font-weight:bold;
+	 color:rgba(0,0,0,.6);
+}
+
+#header #header_content .submit_field {
+     background-image: url("images/header/login_btn_bg.png");
+     background-position: 0px 50%;
+     background-repeat: no-repeat;
+     float: left;
+     height: 32px;
+     margin: 9px 10px auto 10px;
+     width: 85px;
+}
+
+#header #header_content #header_text {
+	float:left;
+	width:120px;
+    margin: 7px 0px 0px 0px;
+}
+#header #header_content #header_text p[title="new_here"]{
+	color: #F9C85D;
+}
+/* ---------------------------------------------------------------------------------------------------------- 
+END header styling -------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------- 
+footer styling -------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+#footer {
+     background-color: #000000;
+     background-image: url("images/footer/footer_bg.png");
+     background-position: center top;
+     background-repeat: no-repeat;
+     color: white;
+     font-family: Myriad Pro,Arial,sans-serif;
+     font-size: 12px;
+     height: 550px;
+     margin: 0px auto;
+     padding: 0px;
+     position: relative;
+}
+
+#footer_shadow {
+     background-image: url("images/footer/footer_shadow.png");
+     height: 58px;
+     margin: 0px auto;
+     width: 982px;
+}
+
+#footer_menu_cap {
+     clear: both;
+     font-size: 14px;
+     line-height: 24px;
+     margin: 0px auto;
+     width: 745px;
+}
+
+#footer_menu_cap ul {
+     padding: 0px;
+}
+
+#footer_menu_cap ul li {
+     float: left;
+     width: 156px;
+}
+
+#footer_menu_cap ul li[value="home"] {
+     background: url("images/footer/icons/home.png") no-repeat scroll 0px 50% transparent;
+     margin-left: 10px;
+     padding: 2px 0px 2px 20px;
+}
+
+#footer_menu_cap ul li[value="account"] {
+    background: url("images/footer/icons/account.png") no-repeat scroll 0px 50% transparent;
+    margin-left: 10px;
+    padding: 2px 0px 2px 20px;
+}
+
+#footer_menu_cap ul li[value="support"] {
+    background: url("images/footer/icons/support.png") no-repeat scroll 0px 50% transparent;
+    margin-left: 10px;
+    padding: 2px 0px 2px 20px;
+}
+
+#footer_menu_cap ul li[value="community"] {
+    background: url("images/footer/icons/community.png") no-repeat scroll 0px 50% transparent;
+    margin-left: 10px;
+    padding: 2px 0px 2px 20px;
+}
+
+#footer_menu {
+    border-bottom: 1px solid;
+    border-color: -moz-use-text-color rgba(255, 255, 255, 0.6);
+    border-top: 1px solid;
+    font-size: 12px;
+    height: 100px;
+    line-height: 20px;
+    margin: 0px auto;
+    padding: 5px 0px;
+    width: 745px;
+}
+
+#footer_menu, #footer_menu ul li {
+    clear: both;
+}
+
+#footer_menu ul {
+    float: left;
+    padding: 0px 10px;
+    width: 166px;
+}
+
+#footer_menu ul li {
+    
+}
+
+#footer_terms {
+    clear: both;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0px auto;
+    padding: 10px 0px;
+    width: 745px;
+}
+#footer_terms ul[title="terms"]{
+    margin:0 auto;
+    width:550px;
+    padding-left: 30px;
+}
+#footer_terms ul[title="copy_rights"] {
+    margin: 0px auto;
+    padding-left: 10px;
+    width: 300px;
+}
+#footer_terms ul li {
+    float: left;
+    padding: 0px 10px;
+}
+
+#footer_bar {
+    background-color: #000000;
+    background-image: url("images/footer/footer_bar.png");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    bottom: 0px;
+    height: 169px;
+    margin: auto;
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 12000;
+}
+#footer_bar #footer_stuffs{
+	position:relative;
+	left:50%;
+	width:1000px;
+	margin-left:-500px;
+	height:169px;
+}
+#footer_bar #footer_stuffs img[title="logo_bw"] {
+	float:left;     
+	margin-right: 45px;
+    margin-top: 30px;
+}
+
+#footer_bar #footer_stuffs img[title="icons"] {
+	float:left;
+    margin-top:40px;
+}
+
+#footer_bar #footer_stuffs img[title="esrb"] {
+    margin-left: 45px;
+	margin-top:34px;
+}
+/* ---------------------------------------------------------------------------------------------------------- 
+END footer styling -------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
