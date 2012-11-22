@@ -10,7 +10,7 @@ Template Name: Homepage template
         
 <h1 value="content_title">Latest News</h1>
 
-<?php posts_loop('news', 3, 0); ?>
+<?php posts_loop('news', 3); ?>
 
 <?php get_template_parts( array( 'parts/shared/content-left-bottom' ) ); ?>
 
