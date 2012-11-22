@@ -361,22 +361,23 @@ content left side styling ------------------------------------------------------
 
 /* ---------------------------------------------------------------------------------------------------------- 
 content news styling ----------------------------------------------------------------------------------------*/
-#middle #middle_left #content #content_bg #content_sec_bg .content_news {
+#middle #middle_left #content #content_bg #content_sec_bg article {
      border-top: 1px solid rgba(0, 0, 0, 0.2);
      color: #000000;
      font-size: 12px;
      font-weight: bold;
      margin: 0px 5px 35px 10px;
-     padding: 15px 0px 0px 0px;
+     padding: 15px 0px 0px;
 }
 
-#middle #middle_left #content #content_bg #content_sec_bg .content_news h2[value="news_title"] {
-     color: rgb(181,51,11);
+#middle #middle_left #content #content_bg #content_sec_bg article h2[value="news_title"] a{
+     color: #B5330B;
      font-size: 17px;
      line-height: 22px;
+    text-decoration: none;
 }
 
-#middle #middle_left #content #content_bg #content_sec_bg .content_news p[title="news_commented_by"] {
+#middle #middle_left #content #content_bg #content_sec_bg article p[title="news_commented_by"] {
      color: rgb(118,118,118);
      float: left;
 	 font-size:13px;
@@ -384,23 +385,23 @@ content news styling -----------------------------------------------------------
      margin-right: 30px;
 }
 
-#middle #middle_left #content #content_bg #content_sec_bg .content_news p[title="news_comments_count"] {
+#middle #middle_left #content #content_bg #content_sec_bg article p[title="news_comments_count"] span {
      color: rgb(118,118,118);
 	 font-size:13px;
      line-height: 26px;
 }
 
-#middle #middle_left #content #content_bg #content_sec_bg .content_news img[value="news_image"] {
+#middle #middle_left #content #content_bg #content_sec_bg article img {
      float: left;
      margin-right: 15px;
 }
 
-#middle #middle_left #content #content_bg #content_sec_bg .content_news p[title="news_text"] {
+#middle #middle_left #content #content_bg #content_sec_bg article p {
      line-height: 24px;
 	 font-size:13px;
 	 font-family: "Myriad Pro" ,Arial,sans-serif;
 }
-#middle #middle_left #content #content_bg #content_sec_bg .content_news a[rel="more"]{
+#middle #middle_left #content #content_bg #content_sec_bg article a[rel="more"]{
 	text-decoration:underline;
 	color: #000000;
 	font-size:13px;

@@ -13,34 +13,26 @@
 <?php get_template_parts( array( 'parts/shared/content-top' ) ); ?>
 
 <?php get_template_parts( array( 'parts/shared/content-left-top' ) ); ?>
-      
-<?php     
-	if (have_posts() ):
-echo '<ol>';
-while ( have_posts() ) : the_post();
-	echo '<h1 value="content_title">',the_title(),'</h1>';
+        
+	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	
-	echo '<li>';
-	echo '<article>';
-            
-		echo '<p title="news_commented_by">by ';the_author();
-		echo ', <time datetime="',the_time( 'Y-m-d' ),'" pubdate>',get_the_date(),the_time(),'</time></p>';
-        echo '<br /><br />';		
-		the_content();
-				
-		if ( get_the_author_meta( 'description' ) ) :
-			echo get_avatar( get_the_author_meta( 'user_email' ) );
-			echo '<h3>About', get_the_author(),'</h3>';
-			the_author_meta( 'description' ); 
-		endif;
+    <article>
+	<h2><?php the_title(); ?></h2>
+	<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>
+	<?php the_content(); ?>			
 
-		comments_template( '', true );
-	echo '</article>';
-	echo '</li>';
-endwhile;
-echo '</ol>';
-else: echo '<h2>No posts to display</h2>';endif;
-?>	
+	<?php if ( get_the_author_meta( 'description' ) ) : ?>
+	<?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?>
+	<h3>About <?php echo get_the_author() ; ?></h3>
+	<?php the_author_meta( 'description' ); ?>
+	<?php endif; ?>
+
+	<?php comments_template( '', true ); ?>
+
+	</article>
+	<?php endwhile; ?>
+
+
 
 <?php get_template_parts( array( 'parts/shared/content-left-bottom' ) ); ?>
 

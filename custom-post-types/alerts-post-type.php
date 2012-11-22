@@ -18,8 +18,8 @@ function post_type_alerts(){
 
     $args = array(
         'labels' => $labels,
-        'public' => false,
-        'publicly_queryable' => false,
+        'public' => true,
+        'publicly_queryable' => true,
         'show_ui' => true,
         'query_var' => true,
         'menu_icon' => '',
