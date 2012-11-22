@@ -19,9 +19,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
             
 		echo '<p title="news_comments_count">',comments_popup_link('Leave a Comment', '1 Comment', '% Comments'),'</p>';
 		the_post_thumbnail('home-news-thumbnail');
-		the_excerpt();
-	
+		
+		echo '<div>';
+		the_excerpt();	
 		echo '<a href="',esc_url( the_permalink() ),'" title="',the_title(),'" rel="more">More</a>';
+		echo '</div>';
+		
 	echo '</article>';
 	echo '</li>';
 endwhile;

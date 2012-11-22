@@ -14,27 +14,10 @@
     </div>
     
 	<div id="footer_menu" class="text_color_60_myriadpro_b">
-    	<ul>
-            <li>What is SeidenKraft Online?</li>
-			<li>How can i join the community?</li>
-			<li>Where is the company from?</li>
-			<li>Visit Homepage !</li>
-			<li>About us !</li>
-        </ul>
-		<ul>
-            <li>What is SeidenKraft Online?</li>
-			<li>How can i join the community?</li>
-			<li>Where is the company from?</li>
-			<li>Visit Homepage !</li>
-			<li>About us !</li>
-        </ul>
-        <ul>
-            <li>What is SeidenKraft Online?</li>
-			<li>How can i join the community?</li>
-			<li>Where is the company from?</li>
-			<li>Visit Homepage !</li>
-			<li>About us !</li>
-        </ul>
+		<?php footer_loop('footer_home') ?>
+        <?php footer_loop('footer_account') ?>
+        <?php footer_loop('footer_support') ?>
+        <?php //footer_loop('footer_media') ?>
         <ul>
             <li>What is SeidenKraft Online?</li>
 			<li>How can i join the community?</li>

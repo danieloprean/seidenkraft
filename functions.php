@@ -6,7 +6,8 @@ define('DEBUG',true);
 require_once( 'external/config.php' );
 require_once( 'external/utilities.php' );
 
-require_once( 'post-loops/loops.php' );
+require_once( 'post-loops/post-loops.php' );
+require_once( 'custom-post-types/custom-post-types.php' );
 
 add_action( 'after_setup_theme', 'theme_setup' );
 if ( ! function_exists( 'theme_setup' ) ):
@@ -15,6 +16,7 @@ if ( ! function_exists( 'theme_setup' ) ):
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'automatic-feed-links' );
         register_nav_menus(array('primary' => 'Primary Navigation'));
+		
         set_post_thumbnail_size( 140, 90, true );
 		add_image_size('home-news-thumbnail', 143, 124, true);
         // add_image_size('banner-size', 940, 450, true);
@@ -36,10 +38,6 @@ add_filter('request', 'new_feed_request');
 
 //add_filter( 'body_class', 'add_slug_to_body_class' );
 
-require_once( 'custom-post-types/news-post-type.php' );
-require_once( 'custom-post-types/promotions-post-type.php' );
-require_once( 'custom-post-types/banners-post-type.php' );
-require_once( 'custom-post-types/alerts-post-type.php' );
 
 /**
  * Add scripts via wp_head()
