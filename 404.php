@@ -9,8 +9,18 @@
  * @since 		Starkers 4.0
  */
 ?>
+
 <?php get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+<?php get_template_parts( array( 'parts/shared/content-top' ) ); ?>
 
-<h2>Page not found</h2>
+<?php get_template_parts( array( 'parts/shared/content-left-top' ) ); ?>
 
-<?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer' ) ); ?>
+<div id="page-not-found">
+	<h2>Page not found</h2>
+</div>
+
+<?php get_template_parts( array( 'parts/shared/content-left-bottom' ) ); ?>
+
+<?php get_template_parts( array( 'parts/shared/content-right' ) ); ?>
+<?php get_template_parts( array( 'parts/shared/content-bottom' ) ); ?>
+<?php get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
