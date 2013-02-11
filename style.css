@@ -1,661 +1,639 @@
-/*
-Theme Name: 	Starkers
-Theme URI: 		http://viewportindustries.com/products/starkers
-Description: 	The totally nude Wordpress theme!
-Version: 		4.0
-Author: 		Elliot Jay Stocks & Keir Whitaker
-Author URI: 	http://viewportindustries.com
-Tags: 			starkers, naked, clean, basic
-*/
-
-/*
-===========================
-CONTENTS:
-
-01 Sensible defaults
-02 Typography
-03 Media queries 
-===========================
-*/
-
-/* ---------------------------------------------------------------------------------------------------------- 
-01 Sensible defaults ----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
+/* CSS crunched with Crunch - http://crunchapp.net/ */
 @import "css/reset.css";
 
-div,
-article,
-section,
-header,
-footer,
-nav,
-li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
-.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
-body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
-::-moz-selection 	{ background:#ff0; color:#333; }
-::selection 		{ background:#ff0; color:#333; }
-
-/* ---------------------------------------------------------------------------------------------------------- 
-02 Typography -----------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-/*
-
-14 / 16	= 		0.875em 		(14px equivalent)
-16 / 16	= 		1em 			(16px equivalent)
-18 / 16 = 		1.125em 		(18px equivalent)
-21 / 16 = 		1.3125em 		(21px equivalent)
-24 / 16 = 		1.5em 			(24px equivalent)
-30 / 16 = 		1.875em 		(30px equivalent)
-
-*/
-
-body,
-input,
-textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
-
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
-
-/* ---------------------------------------------------------------------------------------------------------- 
-03 Media queries (using a mobile-first approach) ------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
-/* 400 and up */
-@media screen and (min-width:400px) {
-
-					{ /* Place your styles here for all widths greater than 400px */ }
-
+@import "css/utils.css";
+.font12 {
+  font-size: 12px;
 }
-
-/* Retina Display */
-@media screen and (-webkit-min-device-pixel-ratio:2) {
-
-					{ /* Place your styles here for all 'Retina' screens */ }
-
+.font14 {
+  font-size: 14px;
+}
+.default_font {
+  font-family: Myriad Pro, Arial, sans-serif;
+  font-size: 12px;
+}
+.lefty {
+  float: left;
 }
 body {
-     background-color: #000000;
-     background-position: center top;
-     background-repeat: no-repeat;
-     color: white;
-     font-family: Myriad Pro,Arial,sans-serif;
-     font-size: 12px;
-     margin: auto;
-     padding: 0px;
+  background-color: #000000;
+  background-image: url("images/header/header_bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: 0;
 }
-.text_color_60_myriadpro_b {
-     color: rgba(255, 255, 255, 0.6);
-     font-weight: bold;
+.default_mouseover {
+  background-position: 0px -27px;
 }
-
-.text_color_myriadpro_b {
-     color: #FFFFFF;
-     font-weight: bold;
+.default_mouseout {
+  background-position: 0px 0px;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
-header styling -------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
+.default_menu_button {
+  background: url("images/default_button.png") no-repeat;
+  background-position: 0px 0px;
+  height: 27px;
+  width: 77px;
+  margin: 11px 2px;
+  color: white;
+  float: left;
+  display: block;
+}
+.default_menu_button p {
+  text-align: center;
+  line-height: 27px;
+}
 #header {
-     background-color: #000000;
-     background-image: url("images/header/header_bg.png");
-     background-position: center bottom;
-     background-repeat: no-repeat;
-     color: white;
-     height: 697px;
-     margin: 0px auto;
-     padding: 0px;
-     position: relative;
+  background-image: url("images/header/header_bar.png");
+  background-position: center top;
+  background-repeat: repeat-x;
+  color: white;
+  height: 250px;
+  padding: 0px;
+  position: relative;
+  font-family: Myriad Pro, Arial, sans-serif;
+  font-size: 12px;
 }
-
-#header_bar {
-     background-image: url("images/header/header_bar.png");
-     background-position: center top;
-     background-repeat: repeat-x;
-     height: 56px;
-     margin: auto;
-     padding: 0px;
-     position: absolute;
-     top: 0px;
-     width: 100%;
-     z-index: 12000;
-}
-
 #header #header_content {
-     font-family: Myriad Pro,Arial,sans-serif;
-     font-size: 14px;
-     left: 50%;
-     margin-left: -490px;
-     position: absolute;
-     width: 990px;
-     z-index: 13000;
+  width: 990px;
+  margin: 0 auto;
+  padding: 0px;
 }
-
-#header #header_content img {
-     float: left;
+#header #header_content .logo_seidenkraft {
+  background: url("images/header/logo.png") no-repeat left;
+  width: 376px;
+  height: 127px;
+  float: left;
 }
-
-#header #header_content img[alt="logo_seidenkraft_online"] {
-     margin-left: -10px;
-     margin-right: 116px;
-}
-
-#header #header_content img[alt="facebook_seidenkraft_online"] {
-     height: 22px;
-     margin-top: 14px;
-     width: 22px;
-}
-
-#header #header_content form input[alt="input"] {
-     background-color: transparent;
-     border: medium none;
-     color: rgba(255, 255, 255, 0.6);
-     font-size: 16px;
-     font-style: italic;
-     font-weight: normal;
-     height: 24px;
-     line-height: 24px;
-     width: 119px;
-}
-
-#header #header_content .input_field {
-     background-image: url("images/header/text_box.png");
-     background-position: 0px 50%;
-     background-repeat: no-repeat;
-     float: left;
-     height: 24px;
-     margin: 13px 0px auto 10px;
-     width: 119px;
-}
-
-#header #header_content form input[alt="submit"] {
-     background-color: transparent;
-     border: none;
-     height: 32px;
-     width: 85px;
-	 line-height: 32px;
-	 font-size:13px;
-	 font-weight:bold;
-	 color:rgba(0,0,0,.6);
-}
-
-#header #header_content .submit_field {
-     background-image: url("images/header/login_btn_bg.png");
-     background-position: 0px 50%;
-     background-repeat: no-repeat;
-     float: left;
-     height: 32px;
-     margin: 9px 10px auto 10px;
-     width: 85px;
-}
-
 #header #header_content #header_text {
-	float:left;
-	width:120px;
-    margin: 7px 0px 0px 0px;
+  width: 140px;
+  height: 127px;
+  margin: 8px 0px;
+  float: left;
 }
-#header #header_content #header_text p[title="new_here"]{
-	color: #F9C85D;
+#header #header_content #header_text p {
+  text-align: center;
+  line-height: 16px;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
-END header styling -------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------------------------------------- 
-content styling -------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-#middle {
-     background-color: #000000;
-     background-image: url("images/middle/middle_bg.png");
-     background-position: center bottom;
-     background-repeat:repeat-y;
-     min-height:1000px;
-	 display:block;
-     margin: -417px auto 0px;
-     position: relative;
-     width: 982px;
-	 padding-bottom:50px;
+#header #header_content #header_text p[title="welcome"] {
+  color: #ffffff;
+  font-size: 14px;
 }
-
-#middle #register_button {
-     background-image: url("images/header/register_btn.png");
-     background-position: center bottom;
-     background-repeat: no-repeat;
-     height: 134px;
-     margin: 0px;
-     padding: 0px;
-     position: absolute;
-     right: -26px;
-     text-indent: -999999px;
-     top: -105px;
-     width: 417px;
-     z-index: 12000;
+#header #header_content #header_text p[title="new_here"] {
+  color: #f9c85d;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
-menu styling ------------------------------------------------------------------------------------------------*/
-#middle #middle_menu {
-     clear: both;
-     position: absolute;
-     top: -4px;
+#header #header_content #header_text p[title="server_time"] {
+  color: #a2a1a1;
 }
-
-#middle #middle_menu ul li {
-     float: left;
-     height: 91px;
-     margin: 0px -1px 0px 0px;
-     padding: 0px;
-     text-indent: -99999px;
-     width: 143px;
+#content {
+  background-color: #000000;
+  background: url("images/content/content_bg.png") repeat-y center bottom;
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  width: 982px;
+  padding-bottom: 50px;
 }
-
-#middle #middle_menu ul li[value="button1"] {
-     background: url("images/middle/left/menu/button1.png") no-repeat scroll 0px 50% transparent;
+#content #register_button_top {
+  background: url("images/content/register_btn.png") no-repeat center bottom;
+  width: 417px;
+  height: 134px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  right: -26px;
+  top: -105px;
+  z-index: 12000;
 }
-
-#middle #middle_menu ul li[value="button2"] {
-     background: url("images/middle/left/menu/button2.png") no-repeat scroll 0px 50% transparent;
+#content #content_left {
+  width: 712px;
+  float: left;
 }
-
-#middle #middle_menu ul li[value="button3"] {
-     background: url("images/middle/left/menu/button3.png") no-repeat scroll 0px 50% transparent;
+#content #content_left #content_menu {
+  height: 100px;
 }
-
-#middle #middle_menu ul li[value="button4"] {
-     background: url("images/middle/left/menu/button4.png") no-repeat scroll 0px 50% transparent;
+#content #content_left #content_menu .content_menu_mouseover {
+  background-position: 0px -83px;
 }
-
-#middle #middle_menu ul li[value="button5"] {
-     background: url("images/middle/left/menu/button5.png") no-repeat scroll 0px 50% transparent;
+#content #content_left #content_menu .content_menu_mouseout {
+  background-position: 0px 0px;
 }
-
-#middle #middle_left {
-     left: 0px;
-     position: relative;
-     width: 710px;
+#content #content_left #content_menu ul li {
+  float: left;
+  width: 143px;
+  height: 83px;
+  margin: 0px -1px 0px 0px;
+  padding: 0px;
+  text-indent: -99999px;
+  background-position: 0px 0px;
 }
-/*END menu styling -------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------*/
-
-/* ---------------------------------------------------------------------------------------------------------- 
-banner styling ------------------------------------------------------------------------------------------------*/
-#middle .middle_left_banner {
-     height: 232px;
-     position: absolute;
-     top: 91px;
-     width: 710px;
-     z-index: 12000;
+#content #content_left #content_menu ul li[value="button1"] {
+  background: url("images/content/left/menu/home.png") no-repeat;
 }
-
-#middle .middle_left_banner img[value="banner_img"] {
-     background: url("images/middle/left/banner/banner.png") no-repeat scroll 50% 50% transparent;
+#content #content_left #content_menu ul li[value="button2"] {
+  background: url("images/content/left/menu/user.png") no-repeat;
 }
-#middle .middle_left_banner #banner_points {
-	background: url("images/middle/left/banner/banner_points.png") no-repeat scroll 50% 50% transparent;
-	 position: absolute;
-	 z-index: 13000;
-     top: 216px;
-	 left:50%;
-	 margin-left:-72px;
-	 width:144px;
-	 height:28px;
-	 
+#content #content_left #content_menu ul li[value="button3"] {
+  background: url("images/content/left/menu/game.png") no-repeat;
 }
-/*END banner styling -------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------------------------- 
-content left side styling -----------------------------------------------------------------------------------*/
-#middle #middle_left{
-	position: relative;
-    padding-top:350px;
-    width: 711px;
+#content #content_left #content_menu ul li[value="button4"] {
+  background: url("images/content/left/menu/forum.png") no-repeat;
 }
-#middle #middle_left #content {
-     background-color: #BCB59B;
-     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
-     display: block;
-     height: auto;
-     margin: 0px auto;
-     padding:0px;
-	 margin-top: -20px;
-     width: 711px;
+#content #content_left #content_menu ul li[value="button5"] {
+  background: url("images/content/left/menu/media.png") no-repeat;
 }
-#middle #middle_left #content .space20px {
-     height: 20px;
-     margin: 0px;
-     padding: 0px;
-     width: 710px;
+#content #content_left #content_left_banner {
+  width: 710px;
+  height: 244px;
+  position: relative;
 }
-#middle #middle_left #content #content_border {
-     background: url("images/middle/left/content/content_border.png") no-repeat scroll 0px 50% transparent;
-     height: 467px;
-     position: absolute;
-     width: 712px;
-     z-index: 10000;
+#content #content_left #content_left_banner #banner_frame {
+  position: absolute;
+  width: 710px;
+  height: 232px;
+  top: 0;
+  left: 0;
+  z-index: 13000;
+  background: url("images/content/left/banner/banner_frame.png") no-repeat scroll 50% 50% transparent;
 }
-
-#middle #middle_left #content #content_bg {
-     background-color: #D8CDB1;
-     border: 1px solid #887651;
-     margin: 0px auto;
-     width: 666px;
+#content #content_left #content_left_banner .banners_container {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  position: absolute;
+  width: 708px;
+  height: 228px;
+  top: 0;
+  left: 0;
+  z-index: 12000;
+  overflow: hidden;
+  border: 1px solid yellow;
 }
-
-#middle #middle_left #content #content_bg #content_sec_bg {
-     border: 1px solid rgba(0, 0, 0, 0.1);
-     height: auto;
-     margin: 3px auto;
-     width: 657px;
+#content #content_left #content_left_banner .banners_container .banner {
+  position: absolute;
+  top: 0;
+  left: 710px;
+  z-index: 10000;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden;
 }
-
-#middle #middle_left #content #content_bg #content_sec_bg h1[value="content_title"] {
-     color: #000000;
-     font-size: 20px;
-     line-height: 30px;
-     text-align: center;
-	 font-family: Rockwell,Arial,sans-serif;
-	 font-weight: bold;
+#content #content_left #content_left_banner .banners_container .banner_start {
+  left: 0;
 }
-
-/* ---------------------------------------------------------------------------------------------------------- 
-content news styling ----------------------------------------------------------------------------------------*/
-#middle #middle_left #content #content_bg #content_sec_bg article {
-     border-top: 1px solid rgba(0, 0, 0, 0.2);
-     color: #000000;
-     font-size: 12px;
-     font-weight: bold;
-     margin: 0px 5px 20px 10px;
-     padding: 15px 0px 0px;
+#content #content_left #content_left_banner #banner_points {
+  position: absolute;
+  z-index: 14000;
+  top: 216px;
+  left: 50%;
+  margin-left: -72px;
+  width: auto;
+  height: 28px;
 }
-
-#middle #middle_left #content #content_bg #content_sec_bg article h2[value="news_title"] a{
-     color: #B5330B;
-     font-size: 17px;
-     line-height: 22px;
-    text-decoration: none;
+#content #content_left #content_left_banner #banner_points .bullets_margin_left {
+  width: 9px;
+  height: 28px;
+  background: url("images/content/left/banner/bullets_margin_left.png") no-repeat scroll 50% 50% transparent;
+  float: left;
 }
-
-#middle #middle_left #content #content_bg #content_sec_bg article p[title="news_commented_by"] {
-     color: rgb(118,118,118);
-     float: left;
-	 font-size:13px;
-     line-height: 26px;
-     margin-right: 30px;
+#content #content_left #content_left_banner #banner_points .bullets_margin_right {
+  width: 9px;
+  height: 28px;
+  background: url("images/content/left/banner/bullets_margin_right.png") no-repeat scroll 50% 50% transparent;
+  float: left;
 }
-
-#middle #middle_left #content #content_bg #content_sec_bg article p[title="news_comments_count"] span {
-     color: rgb(118,118,118);
-	 font-size:13px;
-     line-height: 26px;
+#content #content_left #content_left_banner #banner_points .bullet {
+  width: 22px;
+  height: 28px;
+  background: url("images/content/left/banner/bullet.png") no-repeat scroll 50% 50% transparent;
+  float: left;
 }
-
-#middle #middle_left #content #content_bg #content_sec_bg article img {
-     float: left;
-     margin-right: 15px;
+#content #content_left #content_left_banner #banner_points .bullet_on {
+  background: url("images/content/left/banner/bullet_on.png") no-repeat scroll 50% 50% transparent;
 }
-
-#middle #middle_left #content #content_bg #content_sec_bg article p {
-     line-height: 24px;
-	 font-size:13px;
-	 font-family: "Myriad Pro" ,Arial,sans-serif;
+#content #content_left #page {
+  width: 712px;
+  background-color: #BCB59B;
+  position: relative;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
 }
-#middle #middle_left #content #content_bg #content_sec_bg article a[rel="more"]{
-	text-decoration:underline;
-	color: #000000;
-	font-size:13px;
-	line-height: 40px;
-	margin-top:20px;	
-	padding:0px 20px 1px 0px;
-	background:url("images/middle/left/content/news/news_x.png") no-repeat right 50%;
+#content #content_left #page .separation_line {
+  margin: 0 auto;
+  width: 634px;
+  height: 2px;
+  background: url("images/content/left/content/download/separation_line.png") no-repeat scroll 0px 0px transparent;
+  clear: both;
 }
-/*END content news styling -----------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------*/
-
-/*END content left side styling -------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------*/
-
-/* ---------------------------------------------------------------------------------------------------------- 
-content right side styling ----------------------------------------------------------------------------------*/
-#middle #middle_right {
-     margin-left: 2px;
-     position: absolute;
-     right: 0px;
-     width: 270px;
-	 top: 0px;
+#content #content_left #page .separation_line_space20px {
+  margin: 20px auto;
+  width: 634px;
+  height: 2px;
+  background: url("images/content/left/content/download/separation_line.png") no-repeat scroll 0px 0px transparent;
+  clear: both;
 }
-
-#middle #middle_right .middle_right_image {
-     height: 165px;
-     margin: 0px auto;
-     width: 270px;
+#content #content_left #page .page_bg {
+  background-color: #D8CDB1;
+  border: 1px solid #887651;
+  margin: 0px auto;
+  width: 666px;
 }
-#middle #middle_right .middle_right_image img[value="requirements"] {
-     background: none;
-	 width:264px;
-	 height:156px;
-	 margin:10px 3px 5px 3px;
-	 
+#content #content_left #page .page_bg .page_content {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 3px auto;
+  width: 647px;
+  padding: 5px;
 }
-#middle #middle_right .middle_right_image .game_alerts{
-	background: url("images/middle/right/game_alerts_bg.png") no-repeat 50% 50%;
-	width:259px;
-	height:134px;
-	margin:5px 5px;
+#content #content_left #page .page_bg .page_content h1[value="page_title"] {
+  color: #000000;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: left;
+  font-family: Rockwell, Arial, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
 }
-#middle #middle_right .middle_right_image .game_alerts h1{
-    padding:15px 10px 5px 10px;
-    font-size: 14px;
-    color:rgb(255,192,80);
+#content #content_left #page .page_bg .page_content .row {
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 32px;
 }
-#middle #middle_right .middle_right_image .game_alerts p{
-    padding:5px 10px;
-    font-size: 12px;
-    color:rgb(255,255,255);
+#content #content_left #page .page_bg .page_content .row .text {
+  float: left;
+  text-align: right;
+  line-height: 30px;
+  width: 150px;
+  margin-right: 16px;
 }
-#middle #middle_right .middle_right_image .game_alerts a{
-    padding:5px 10px;
-    font-size: 12px;
-    color:rgb(255,192,80);
-    text-decoration:none;
+#content #content_left #page .page_bg .page_content .row .field {
+  float: left;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #b0a37c;
+  border: 1px solid #847a5d;
 }
-#middle #middle_right .middle_right_image .server_stats{
-	background: url("images/middle/right/server_stats.png") no-repeat 50% 50%;
-	width:257px;
-	 height:142px;
-	 margin:5px 6px;
+#content #content_left #page .page_bg .page_content .register_form_button {
+  clear: both;
+  background: url("images/content/left/content/register/register_button.png") no-repeat left 50%;
+  width: 414px;
+  height: 52px;
+  margin: 10px auto;
 }
-#middle #middle_right .middle_right_image img[value="demo_image"] {
-     background: url("images/middle/right/middle_right_image.png") no-repeat scroll 50% 50% transparent;
-	 margin: 5px 11px;
-	 width:247px;
+#content #content_left #page .page_bg .page_content .terms_of_agreements {
+  background: url("images/content/left/content/check_box.png") no-repeat left 50%;
+  padding-left: 18px;
+  height: 14px;
+  line-height: 14px;
+  width: 600px;
+  margin: 10px 130px;
 }
-/*END content right side styling ------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------------------------------------------------------------- 
-content top and bottom line styling -------------------------------------------------------------------------*/
-#middle #middle_top_line, #middle_bottom_line {
-     background-repeat: no-repeat;
-     margin: 0px auto;
-     position: absolute;
+#content #content_left #page .page_bg .page_content .account_balance {
+  height: 33px;
+  line-height: 33px;
+  margin-left: 10px;
 }
-
-#middle #middle_top_line {
-     background-image: url("images/middle/middle_top_line.png");
-     height: 62px;
-     margin-left: -26px;
-     margin-top: -19px;
-     position: absolute;
-     top: 0px;
-     width: 1034px;
+#content #content_left #page .page_bg .page_content .account_balance .coins {
+  width: 100px;
 }
-
-#middle #middle_bottom_line {
-     background-image: url("images/middle/middle_bottom_line.png");
-     bottom: 0px;
-     height: 17px;
-     margin-top: 0px;
-     width: 982px;
+#content #content_left #page .page_bg .page_content .account_balance .coins span[title="play_coins"] {
+  text-decoration: none;
+  font-size: 13px;
+  padding-left: 15px;
+  background: url("images/content/left/content/account/coin_silver.png") no-repeat left 50%;
 }
-/*END content top and bottom line styling----------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------*/
-
-/* ---------------------------------------------------------------------------------------------------------- 
-END content styling -------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
-
-/* ---------------------------------------------------------------------------------------------------------- 
-footer styling -------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
+#content #content_left #page .page_bg .page_content .account_balance .coins span[title="play_coins_no"] {
+  text-decoration: none;
+  font-size: 13px;
+  color: #000000;
+}
+#content #content_left #page .page_bg .page_content .account_balance .coins_info {
+  float: left;
+  width: 220px;
+}
+#content #content_left #page .page_bg .page_content .account_balance .time_info {
+  width: 176px;
+  text-align: right;
+  margin-right: 10px;
+}
+#content #content_left #page .page_bg .page_content .account_balance .account_button {
+  background: url("images/content/left/content/account/button.png") no-repeat left 50%;
+  width: 77px;
+  text-align: center;
+  color: #ffffff;
+}
+#content #content_left #page .page_bg .page_content #account_option_title {
+  background: url("images/content/left/content/account/account_option_bg.png") no-repeat left 50%;
+  width: 636px;
+  height: 33px;
+  line-height: 33px;
+}
+#content #content_left #page .page_bg .page_content #account_option_title p {
+  padding-left: 15px;
+}
+#content #content_left #page .page_bg .page_content .account_option_line {
+  margin: 0 2px;
+  width: 632px;
+  height: 62px;
+}
+#content #content_left #page .page_bg .page_content .account_option_line p[title="h1"] {
+  color: #303030;
+  font-size: 18px;
+  line-height: 36px;
+  padding-left: 15px;
+}
+#content #content_left #page .page_bg .page_content .account_option_line p[title="p"] {
+  color: rgba(48, 48, 48, 0.4);
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 15px;
+}
+#content #content_left #page .page_bg .page_content #account1 {
+  background: url("images/content/left/content/account/1.png") no-repeat right 50% rgba(242, 240, 229, 0.6);
+  height: 57px;
+}
+#content #content_left #page .page_bg .page_content #account2 {
+  background: url("images/content/left/content/account/2.png") no-repeat right 50% rgba(242, 240, 229, 0.6);
+  margin-top: 8px;
+}
+#content #content_left #page .page_bg .page_content #account3 {
+  background: url("images/content/left/content/account/3.png") no-repeat right 50% rgba(242, 240, 229, 0.6);
+  margin-top: 8px;
+}
+#content #content_left #page .page_bg .page_content #account4 {
+  background: url("images/content/left/content/account/4.png") no-repeat right 50% rgba(242, 240, 229, 0.6);
+  margin-top: 8px;
+}
+#content #content_left #page .page_bg .page_content #account5 {
+  background: url("images/content/left/content/account/5.png") no-repeat right 50% rgba(242, 240, 229, 0.6);
+  margin-top: 8px;
+}
+#content #content_left #page .page_bg .page_content article {
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0px 5px 20px 10px;
+  padding: 15px 0px 0px;
+}
+#content #content_left #page .page_bg .page_content article h2[value="news_title"] a {
+  color: #B5330B;
+  font-size: 17px;
+  line-height: 22px;
+  text-decoration: none;
+}
+#content #content_left #page .page_bg .page_content article p {
+  line-height: 24px;
+  font-size: 13px;
+  font-family: "Myriad Pro", Arial, sans-serif;
+}
+#content #content_left #page .page_bg .page_content article p[title="news_commented_by"] {
+  color: #767676;
+  float: left;
+  line-height: 26px;
+  margin-right: 30px;
+}
+#content #content_left #page .page_bg .page_content article p[title="news_comments_count"] span {
+  color: #767676;
+  line-height: 26px;
+}
+#content #content_left #page .page_bg .page_content article img {
+  float: left;
+  margin-right: 15px;
+}
+#content #content_left #page .page_bg .page_content article a[rel="more"] {
+  text-decoration: underline;
+  color: #000000;
+  font-size: 13px;
+  line-height: 40px;
+  margin-top: 20px;
+  padding: 0px 20px 1px 0px;
+  background: url("images/middle/left/content/news/news_x.png") no-repeat right 50%;
+}
+#content #content_left #page #page_border_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("images/content/left/content/page_border_top.png") no-repeat;
+  width: 712px;
+  height: 31px;
+}
+#content #content_left #page #page_border_left {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  background: url("images/content/left/content/page_border_left.png") no-repeat;
+  width: 8px;
+  height: 436px;
+}
+#content #content_left #page #page_border_right {
+  position: absolute;
+  top: 31px;
+  right: 0;
+  background: url("images/content/left/content/page_border_right.png") no-repeat;
+  width: 9px;
+  height: 436px;
+}
+#content #content_right {
+  margin-left: 2px;
+  position: relative;
+  width: 260px;
+  float: left;
+}
+#content #content_right .content_right_image {
+  height: 165px;
+  margin: 0px auto;
+  width: 270px;
+}
+#content #content_right .content_right_image img[value="requirements"] {
+  background: none;
+  width: 264px;
+  height: 156px;
+  margin: 10px 3px 5px 3px;
+}
+#content #content_right .content_right_image .game_alerts {
+  background: url("images/content/right/game_alerts_bg.png") no-repeat 50% 50%;
+  width: 259px;
+  height: 134px;
+  margin: 5px 5px;
+}
+#content #content_right .content_right_image .game_alerts h1 {
+  padding: 15px 10px 5px 10px;
+  font-size: 14px;
+  color: #ffc050;
+}
+#content #content_right .content_right_image .game_alerts p {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #ffffff;
+}
+#content #content_right .content_right_image .game_alerts a {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: #ffc050;
+  text-decoration: none;
+}
+#content #content_right .content_right_image .server_stats {
+  background: url("images/content/right/server_stats.png") no-repeat 50% 50%;
+  width: 257px;
+  height: 142px;
+  margin: 5px 6px;
+}
+#content #content_right .content_right_image img[value="demo_image"] {
+  background: url("images/content/right/content_right_image.png") no-repeat scroll 50% 50% transparent;
+  margin: 5px 11px;
+  width: 247px;
+}
+#content #content_top_line,
+#content #content_bottom_line {
+  background-repeat: no-repeat;
+  margin: 0px auto;
+  position: absolute;
+  z-index: 10000;
+}
+#content #content_top_line {
+  background-image: url("images/content/content_top_line.png");
+  height: 62px;
+  margin-left: -26px;
+  margin-top: -19px;
+  position: absolute;
+  top: 0px;
+  width: 1034px;
+}
+#content #content_bottom_line {
+  background-image: url("images/content/content_bottom_line.png");
+  bottom: 0px;
+  height: 17px;
+  margin-top: 0px;
+  width: 982px;
+}
 #footer {
-     background-color: #000000;
-     background-image: url("images/footer/footer_bg.png");
-     background-position: center top;
-     background-repeat: no-repeat;
-     color: white;
-     font-family: Myriad Pro,Arial,sans-serif;
-     font-size: 12px;
-     height: 550px;
-     margin: 0px auto;
-     padding: 0px;
-     position: relative;
+  background-color: #000000;
+  background-image: url("images/footer/footer_bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0px auto;
+  padding: 0px;
+  position: relative;
+  width: 100%;
 }
-
-#footer_shadow {
-     background-image: url("images/footer/footer_shadow.png");
-     height: 58px;
-     margin: 0px auto;
-     width: 982px;
+#footer #footer_shadow {
+  background-image: url("images/footer/footer_shadow.png");
+  height: 58px;
+  margin: 0px auto;
+  width: 982px;
 }
-
-#footer_menu_cap {
-     clear: both;
-     font-size: 14px;
-     line-height: 24px;
-     margin: 0px auto;
-     width: 745px;
+#footer #footer_menu_cap {
+  clear: both;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0px auto;
+  width: 745px;
 }
-
-#footer_menu_cap ul {
-     padding: 0px;
+#footer #footer_menu_cap ul {
+  padding: 0px;
 }
-
-#footer_menu_cap ul li {
-     float: left;
-     width: 156px;
+#footer #footer_menu_cap ul li {
+  float: left;
+  width: 166px;
+  padding: 2px 0px 2px 20px;
+  display: block;
 }
-
-#footer_menu_cap ul li[value="home"] {
-     background: url("images/footer/icons/home.png") no-repeat scroll 0px 50% transparent;
-     margin-left: 10px;
-     padding: 2px 0px 2px 20px;
+#footer #footer_menu_cap ul li[title="home"] {
+  background: url("images/footer/icons/home.png") no-repeat scroll 0px 50% transparent;
 }
-
-#footer_menu_cap ul li[value="account"] {
-    background: url("images/footer/icons/account.png") no-repeat scroll 0px 50% transparent;
-    margin-left: 10px;
-    padding: 2px 0px 2px 20px;
+#footer #footer_menu_cap ul li[title="account"] {
+  background: url("images/footer/icons/account.png") no-repeat scroll 0px 50% transparent;
 }
-
-#footer_menu_cap ul li[value="support"] {
-    background: url("images/footer/icons/support.png") no-repeat scroll 0px 50% transparent;
-    margin-left: 10px;
-    padding: 2px 0px 2px 20px;
+#footer #footer_menu_cap ul li[title="support"] {
+  background: url("images/footer/icons/support.png") no-repeat scroll 0px 50% transparent;
 }
-
-#footer_menu_cap ul li[value="community"] {
-    background: url("images/footer/icons/community.png") no-repeat scroll 0px 50% transparent;
-    margin-left: 10px;
-    padding: 2px 0px 2px 20px;
+#footer #footer_menu_cap ul li[title="community"] {
+  background: url("images/footer/icons/community.png") no-repeat scroll 0px 50% transparent;
 }
-
-#footer_menu {
-    border-bottom: 1px solid;
-    border-color: rgba(255, 255, 255, 0.6);
-    border-top: 1px solid;
-    font-size: 12px;
-    height: 100px;
-    line-height: 20px;
-    margin: 0px auto;
-    padding: 5px 0px;
-    width: 745px;
+#footer #footer_menu {
+  border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255, 0.6);
+  border-top: 1px solid;
+  font-size: 12px;
+  height: 100px;
+  line-height: 20px;
+  margin: 0px auto;
+  padding: 5px 0px;
+  width: 745px;
+  clear: both;
 }
-
-#footer_menu, #footer_menu ul li {
-    clear: both;
+#footer #footer_menu ul {
+  float: left;
+  padding: 0px 10px;
+  width: 166px;
 }
-
-#footer_menu ul {
-    float: left;
-    padding: 0px 10px;
-    width: 166px;
+#footer #footer_menu ul li {
+  clear: both;
 }
-
-#footer_menu ul li a{
-	text-decoration: none;
-	font-size: 12px;
-	color: rgba(255, 255, 255, 0.6);    
+#footer #footer_menu ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
 }
-
-#footer_terms {
-    clear: both;
-    font-size: 12px;
-    line-height: 18px;
-    margin: 0px auto;
-    padding: 10px 0px;
-    width: 745px;
+#footer #footer_terms {
+  clear: both;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0px auto;
+  padding: 10px 0px;
+  width: 650px;
 }
-#footer_terms ul[title="terms"]{
-    margin:0 auto;
-    width:550px;
-    padding-left: 30px;
+#footer #footer_terms ul {
+  padding-left: 30px;
 }
-#footer_terms ul[title="copy_rights"] {
-    margin: 0px auto;
-    padding-left: 10px;
-    width: 300px;
+#footer #footer_terms ul li {
+  float: left;
+  padding: 0px 10px;
 }
-#footer_terms ul li {
-    float: left;
-    padding: 0px 10px;
+#footer #footer_terms #copy_right {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
 }
-
-#footer_bar {
-    background-color: #000000;
-    background-image: url("images/footer/footer_bar.png");
-    background-position: center bottom;
-    background-repeat: repeat-x;
-    bottom: 0px;
-    height: 169px;
-    margin: auto;
-    padding: 0px;
-    position: absolute;
-    width: 100%;
-    z-index: 12000;
+#footer .footer_space {
+  width: 1000px;
+  height: 50px;
 }
-#footer_bar #footer_stuffs{
-	position:relative;
-	left:50%;
-	width:1000px;
-	margin-left:-500px;
-	height:169px;
+#footer #footer_bar {
+  background-image: url("images/footer/footer_bar.png");
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  height: 169px;
 }
-#footer_bar #footer_stuffs img[title="logo_bw"] {
-	float:left;     
-	margin-right: 45px;
-    margin-top: 30px;
+#footer #footer_bar .footer_stuffs {
+  width: 1000px;
+  height: 169px;
+  margin: auto;
 }
-
-#footer_bar #footer_stuffs img[title="icons"] {
-	float:left;
-    margin-top:40px;
+#footer #footer_bar .footer_stuffs .logo_bw {
+  background: url("images/footer/logo_bw.png") no-repeat;
+  float: left;
+  width: 325px;
+  height: 110px;
+  margin-right: 45px;
+  margin-top: 30px;
 }
-
-#footer_bar #footer_stuffs img[title="esrb"] {
-    margin-left: 45px;
-	margin-top:34px;
+#footer #footer_bar .footer_stuffs .icons {
+  background: url("images/footer/icons.png") no-repeat;
+  float: left;
+  width: 332px;
+  height: 81px;
+  margin-top: 40px;
 }
-/* ---------------------------------------------------------------------------------------------------------- 
-END footer styling -------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------- */
+#footer #footer_bar .footer_stuffs .esrb {
+  background: url("images/footer/esrb.png") no-repeat;
+  float: left;
+  width: 245px;
+  height: 101px;
+  margin-left: 45px;
+  margin-top: 34px;
+}

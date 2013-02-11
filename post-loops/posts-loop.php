@@ -9,6 +9,7 @@ $loop = new WP_Query( array( 'post_type' => $post_name, 'post_child' => 0, 'post
 if ($loop->have_posts() ):
 echo '<ol>';
 while ( $loop->have_posts() ) : $loop->the_post();
+	echo '<div class="separation_line"></div>';
 	echo '<li>';
 	echo '<article>';
 		echo '<h2 value="news_title"><a href="',esc_url( the_permalink() ),'" title="Permalink to ',

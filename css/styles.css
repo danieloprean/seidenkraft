@@ -189,10 +189,16 @@ body {
 
 #middle .middle_left_banner {
      height: 232px;
-     position: absolute;
+     position: relative;
      top: 91px;
      width: 710px;
      z-index: 12000;
+}
+#middle .middle_left_banner .banner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 11000;
 }
 
 #middle .middle_left_banner img[value="banner_img"] {

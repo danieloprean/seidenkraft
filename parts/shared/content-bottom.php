@@ -1,6 +1,8 @@
-	<div id="middle_top_line">
-    </div>
-    <div id="middle_bottom_line">
-    </div>
-</div>
-<!--middle END-->
+
+			<div id="content_top_line"></div>
+			<div id="content_bottom_line"></div>
+			<div class="block">&nbsp;</div>
+
+		</div>
+	</div>
+	<!--content END-->

@@ -19,7 +19,7 @@ if ( ! function_exists( 'theme_setup' ) ):
 		
         set_post_thumbnail_size( 140, 90, true );
 		add_image_size('home-news-thumbnail', 143, 124, true);
-        // add_image_size('banner-size', 940, 450, true);
+        add_image_size('banner-size', 706, 228, true);
     }
 endif;
 
@@ -199,4 +199,27 @@ add_action('wp_ajax_message_me','handle_email');
 add_action('wp_ajax_nopriv_message_me','handle_email');
 
 
+function field_info($id, $text){
+ echo '<div id="'.$id.'" class="more_info"></div>';
+ echo '<div class="field_info_holder" id="'.$id.'_field">';
+ 	echo '<div class="field_info">';
+    	echo '<div class="field_info_top"></div>';
+    	echo '<div class="field_info_content"><p>'.$text.'</p></div>';
+        echo '<div class="field_info_bottom"></div>';
+		echo '<div class="field_info_arrow"></div>';		
+    echo '</div>';
+ echo '</div>';
+}
 
+//creates dafault button without margin
+function default_button($text, $link){
+	echo '<div class="default_menu_button" style="margin:2px">';
+	echo '<p>'.$text.'</p>';
+	echo '</div>';
+}
+//creates dafault button with margin 11px
+function default_button_m($text, $link){
+	echo '<div class="default_menu_button">';
+	echo '<p>'.$text.'</p>';
+	echo '</div>';
+}
