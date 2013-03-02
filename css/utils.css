@@ -68,6 +68,9 @@
   margin-left: 11px;
   position: relative;
 }
+.req {
+  border: 1px solid red;
+}
 .more_info {
   background: url("../images/content/left/content/field_info/info.png") no-repeat scroll 50% 50% transparent;
   width: 30px;

@@ -245,7 +245,7 @@ body {
   width: 647px;
   padding: 5px;
 }
-#content #content_left #page .page_bg .page_content h1[value="page_title"] {
+#content #content_left #page .page_bg .page_content h1 {
   color: #000000;
   font-size: 20px;
   line-height: 40px;
